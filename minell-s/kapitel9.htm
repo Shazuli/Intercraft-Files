@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>Minell´s HTML - Kapitel 9 - Formulär</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="generator" content="Dreamweaver MX, CSS, Anteckningar">
+<meta name="keywords" content="HTML-kurs, html, html-editorer, scriptspråk">
+<meta name="description" content="Denna sida är en HTML-kurs för nybörjare. Sidan innehåller både fakta, koder och uppgifter.">
+<meta name="author" content="Copyright Carina Minell">
+<link href="layout.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="layout">
+<div id="sidhuvud">
+  <h2><a href="Kapitel2/index.htm"><img src="bilder2/nylogga2.gif" alt="Länk till startsidan" width="471" height="90" border="0"></a></h2>
+  </div>
+<div id="menycontainer">
+<ul>
+    <li><a href="index.htm" >Startsida</a></li>
+	<li><a href="kapitel1.htm" >Kapitel 1</a></li>
+    <li><a href="kapitel2.htm">Kapitel 2</a></li>
+    <li><a href="kapitel3.htm">Kapitel 3</a></li>
+    <li><a href="kapitel4.htm">Kapitel 4</a></li>
+	<li><a href="kapitel5.htm">Kapitel 5</a></li>
+    <li><a href="kapitel6.htm">Kapitel 6</a></li>
+    <li><a href="kapitel7.htm">Kapitel 7</a></li>
+    <li><a href="kapitel8.htm">Kapitel 8</a></li>
+	<li><a href="kapitel9.htm" id="current">Kapitel 9</a></li>
+    <li><a href="kapitel10.htm">Kapitel 10</a></li>
+    <li><a href="Kkapitel11.htm">Kapitel 11</a></li>
+
+</ul>
+</div>
+<div id="kolumncontainer">
+<div id="kolumn1">
+<h1>Kapitel 9 - Formul&auml;r </h1>
+<p align="left">Du har s&auml;kert st&ouml;tt p&aring; n&aring;gon form av formul&auml;r p&aring; WWW. Formul&auml;ren ger surfaren chans att skicka information till sidans &auml;gare och g&ouml;ra kommunikationen interaktiv. Informationen i ett formul&auml;r kan bland annat skickas till en e-postadress eller ibland till ett serverskript. Om formul&auml;rinformationen skickas till ett skript kan servern utifr&aring;n den skickade informationen t ex bygga HTML-sidor, g&auml;stb&ouml;cker eller skicka ut e-post. </p>
+<p align="left">Vi kommer inte att g&aring; in p&aring; n&aring;gra serverskript att skicka informationen till. Serverskript &auml;r sm&aring; program som tar hand om informationen som anv&auml;ndare f&ouml;r in i ett formul&auml;r. Denna kurs behandlar enbart HTML s&aring; du f&aring;r ingen f&ouml;rklaring p&aring; hur s&aring;dan skript skrivs. Serverskript skrivs ofta i ett skriptspr&aring;k som heter <b>CGI, Perl eller VB-skript.</b><br>
+  D&auml;remot kommer vi att behandla vilka taggar som beh&ouml;vs f&ouml;r att skapa formul&auml;r med olika inneh&aring;ll och hur den vanlige webbsidemakaren kan f&aring; information via e-post om sina formul&auml;r.</p>
+<hr>
+<p align="left"><b>Grundl&auml;ggande Formul&auml;r-taggar</b><br>
+  Du starta restepektive avslutar ett formul&auml;r med taggarna <b>&lt;FORM&gt; &lt;/FORM&gt;. </b>Efter detta m&aring;ste du tala om hur formul&auml;rets inneh&aring;ll skall skickas till webbservern. Det finns tv&aring; metoder:</p>
+<ol>
+  <li> <b>&lt;FORM ACTION=&quot;program.cgi&quot; METHOD=&quot;post&quot;&gt;</b></li>
+  <li> <b> &lt;FORM ACTION=&quot;mailto:flitiga@lisa.se&quot; METHOD=&quot;post&quot;&gt;</b></li>
+</ol>
+<p>F&ouml;r att f&aring; texten l&auml;sbar i e-postprogrammet kr&auml;vs det att du l&auml;gger till kommandot <b>ENCTYPE=&quot;text/plain&quot;</b> i FORM-taggen:<br>
+                  <br>
+                  <b>&lt;FORM ACTION=&quot;mailto:flitiga@lisa.se&quot; METHOD=&quot;post&quot; ENCTYPE=&quot;text/plain&quot;&gt;<br>
+                </b></p>
+<p>(ACTION, METHOD, och ENCTYPE skall egentligen finnas med i alla kommande exempel, men av utrymmessk&auml;l har jag utel&auml;mnat dessa. Det g&aring;r bra att utel&auml;mna dessa under &quot;tr&auml;ningen&quot;. Om du d&auml;remot skall l&auml;gga ut formul&auml;ret p&aring; n&auml;tet skall de finnas med).</p>
+<hr>
+<p><b>Formul&auml;robjekt</b><br>
+    Det &auml;r skillnad p&aring; vilka tecken du kan anv&auml;nda i <b>formul&auml;rkoden</b> (innanf&ouml;r taggarna) respektive <b>formul&auml;rtexten</b> (det som skrivs mellan taggarna). Anv&auml;nd <b>inte </b>svenska bokst&auml;ver som <b>&aring;, &auml; ,&ouml; och andra specialtecken i formul&auml;rkoden</b>. Anv&auml;nd inte heller mer &auml;n <b>h&ouml;gst 8 tecken</b> i formul&auml;rkoden. Det kan st&auml;lla till problem. I formul&auml;rtexten finns inte dessa begr&auml;nsningar.</p>
+<hr>
+<p><b>Textf&auml;lt </b><br>
+  Ett av de vanligaste formul&auml;robjekten &auml;r textf&auml;ltet. Textf&auml;lt f&ouml;rekommer i en m&auml;ngd varianter och storlekar men de &auml;r i grunden v&auml;ldigt lika. Taggen man anv&auml;nder f&ouml;r att skapa textf&auml;lt &auml;r <b><br>
+&lt;INPUT TYPE=TEXT&gt;</b> (input=inmatning, type=typ av inmatning) och det &auml;r med attributet type som du styr hur formul&auml;robjektet ska se ut och fungera. <br>
+  Det &auml;r ocks&aring; obligatoriskt att du namnger inmatningsf&auml;ltet med kommandot <b>NAME, eftersom det &auml;r detta namn som </b>anges n&auml;r du f&aring;r &quot;svar&quot; via e-post eller script, samt den text som anv&auml;ndaren skrivit i. <br>
+                  <b>&lt;FORM&gt;<br>
+  Namn: &lt;INPUT TYPE=&quot;TEXT&quot; NAME=&quot;namntext&quot;&gt;<br>
+&lt;/FORM&gt; </b></p>
+<form>
+  <p><b>Namn:  </b>
+      <input type=text name="namntext">
+  </p>
+</form>
+<p><b><br>
+  </b>Textf&auml;lt har ytterligare ett attribut som best&auml;mmer storlek p&aring; textf&auml;ltet. Attributet man anv&auml;nder heter <b>SIZE </b>och v&auml;rdet man tilldelar size &auml;r det <b>antal tecken</b> man vill skall rymmas.<br>
+                  <b>&lt;FORM&gt;<br>
+  Namn: &lt;INPUT TYPE=&quot;TEXT&quot; NAME=&quot;namntext&quot; SIZE="30"&gt;<br>
+&lt;/FORM&gt; <br>
+                </b></p>
+<form>
+  <p><b>Namn:</b> </font>
+      <input type=text name="namntext size="50" maxlength="75" size="30">
+  </p>
+</form>
+<p><br>
+    Du kan ocks&aring; styra exakt hur m&aring;nga tecken som skall vara m&ouml;jliga att mata in i f&auml;ltet genom att anv&auml;nda <b>MAXLENGHT</b>=&quot;antal tecken&quot;<b> . </b>Du kan ocks&aring; visa en v&auml;gledande text i inmatningsf&auml;ltet genom att anv&auml;nda kommandot<b> VALUE.</b><br>
+<b>&lt;FORM&gt;<br>
+Namn: &lt;INPUT TYPE=&quot;TEXT&quot; NAME=&quot;namntext&quot; SIZE="30" <br>
+MAXLENGHT="30" VALUE=&quot;Oskar&quot;&gt;<br>
+&lt;/FORM&gt; </b><br>
+<form>
+  <p><b>Namn:
+          <input type=text name="namntext2" size=30" maxlength="30" value="Oskar"></b>
+</p>
+</form>
+
+<hr>
+<p> <strong>Textareor (stora textf&auml;lt) 
+</strong><br>
+Om du vill ha ett st&ouml;rre textf&auml;lt d&auml;r surfaren ska kunna skriva in och &ouml;verblicka en l&auml;ngre text anv&auml;nder du TEXTAREA -taggen f&ouml;r att textf&auml;ltet ska synas p&aring; sk&auml;rmen. Attributen f&ouml;r att best&auml;mma h&ouml;jd och bredd &auml;r ROWS och COLS . Rows best&auml;mmer hur m&aring;nga rader h&ouml;gt f&auml;ltet ska vara. Observera att h&ouml;jden m&auml;ts i rader och inte i pixlar. Cols best&auml;mmer hur m&aring;nga tecken brett f&auml;ltet ska vara. <br>
+TEXTAREA-taggen m&aring;ste avslutas f&ouml;r att textf&auml;ltet ska synas p&aring; sk&auml;rmen. <br>
+<strong>&lt;FORM&gt; <br>
+Skriv h&auml;r: <br>
+&lt;TEXTAREA ROWS="5" COLS="15"&gt;&lt;/TEXTAREA&gt; <br>
+&lt;/FORM&gt; <br>
+</strong><br>
+<strong>Skriv h&auml;r: </strong> </p>
+<form>
+                
+                <textarea rows=5 cols=15></textarea>
+      </form>
+
+      <hr>
+      <p><b>L&ouml;senordsf&auml;lt </b><br>
+Denna typ av f&auml;lt fungerar som vanliga textf&auml;lt, men det anv&auml;ndaren skriver visas inte p&aring; sk&auml;rmen. F&ouml;r att g&ouml;ra ett l&ouml;senordsf&auml;lt tilldelar du ist&auml;llet <b>TYPE </b>attributet <b>PASSWORD</b>. Texten som skrivs in i ett password-f&auml;lt visas som sm&aring; prickar i st&auml;llet f&ouml;r vanliga bokst&auml;ver. <br>
+                <b>&lt;INPUT TYPE=PASSWORD&gt;<br>
+                </b>Precis som tidigare skall du <b>namnge </b>f&auml;ltet och g&auml;rna skriva in storlek och maxl&auml;ngd f&ouml;r f&auml;ltet.<br>
+                <b>&lt;FORM&gt; </b><br>
+                <b>&lt;INPUT TYPE=PASSWORD NAME=&quot;losenord&quot; SIZE="10" MAXLENGTH="10"&gt;<br>
+&lt;/FORM&gt; </b></font></p>
+      <p><b> L&ouml;senord
+              <input type=password name="losenord" size="10" maxlenght="10">
+      </b></p>
+      <hr>
+      <p><b>Radioknappar och kryssrutor</b><br>
+  Du har s&auml;kert sett s&aring; kallade radioknappar och kryssrutor n&auml;r du surfat ute p&aring; n&auml;tet. Dessa tv&aring; objekt g&ouml;r det m&ouml;jligt f&ouml;r anv&auml;ndaren att kryssa f&ouml;r alternativ i formul&auml;ret. <br>
+                  Radioknappar anv&auml;nds n&auml;r bes&ouml;karen bara kan v&auml;lja ett av flera alternativ, medan kryssrutor g&ouml;r det m&ouml;jligt att v&auml;lja flera alternativ.L&auml;gg m&auml;rke till att namnet (NAME) &auml;r det samma p&aring; alla objekt. Det anv&auml;nds n&auml;r webbl&auml;saren skickar formul&auml;rets inneh&aring;ll till ditt skript. Om man ger flera objekt samma namn bildar de en grupp, vilket &auml;r vanligt n&auml;r man arbetar med radioknappar och kryssrutor.<b><br>
+  INPUT TYPE</b> f&ouml;r dessa knappar &auml;r <b>RADIO</b> respektive <b>CHECKBOX</b>. Studera exempen nedan:<br>
+                   <br>
+                 <b>&lt;FORM&gt;</b><br>
+  Vilken &auml;r din favoritmat?<br>
+  <b>&lt;INPUT TYPE=RADIO NAME</b>="mat" <b>VALUE</b>="pizza" <b>CHECKED</b>="pizza"&gt;Pizza<br>
+  <b>&lt;INPUT TYPE=RADIO NAME</b>="mat" <b>VALUE</b>="pasta"&gt;Pasta<br>
+  <b>&lt;INPUT TYPE=RADIO NAME</b>="mat" <b>VALUE</b>="polsa"&gt;P&ouml;lsa<br>
+<b>&lt;/FORM&gt; <br>
+  <br>
+  </b>(L&auml;gg m&auml;rke till att du kan ha ett f&ouml;rvalt v&auml;rde om du anv&auml;nder dig av attributet <b>CHECKED</b>).</p>
+      <form>
+      Vilken &auml;r din favoritmat?<br>
+        <input type=radio name=mat value=Pizza checked=Pizza>
+  Pizza
+  <input type=radio name=mat value=Pasta>
+  Pasta
+  <input type=radio name=mat value=Polsa>
+  P&ouml;lsa 
+      </form>
+      <p><br>
+          <br>
+        <b>&lt;FORM&gt;</b><br>
+  Vilken &auml;r dina favoritr&auml;tter?<br>
+  <b>&lt;INPUT TYPE=CHECKBOX NAME</b>="mat" <b>VALUE</b>="pizza" <b>CHECKED</b>="pizza"&gt;Pizza<br>
+  <b>&lt;INPUT TYPE=CHECKBOX NAME</b>="mat" <b>VALUE</b>="pasta"&gt;Pasta<br>
+  <b>&lt;INPUT TYPE=CHECKBOX NAME</b>="mat" <b>VALUE</b>="polsa"&gt;P&ouml;lsa<br>
+<b>&lt;/FORM&gt; </b><br>
+      <form>
+       Vilka &auml;r dina favoritr&auml;tter?<br>
+        <input type=checkbox name=mat value=pizza checked=pizza>
+  Pizza
+  <input type=checkbox name=mat value=pasta>
+  Pasta
+  <input type=checkbox name=mat value=polsa>
+  P&ouml;lsa </font>
+      </form>
+      <br>
+      <hr>
+      <p> <b>Rullningsbar meny</b><br>
+  Ett annat vanligt formul&auml;robjekt &auml;r rullgardinsmenyn som ger surfaren m&ouml;jlighet att v&auml;lja mellan flera olika alternativ fr&aring;n en lista. Rullgardins-menyn &auml;r byggd av flera stycken taggar ungef&auml;r som en lista. <br>
+                  <b>&lt;SELECT&gt;och</b> <b>&lt;/SELECT> </b>-taggarna p&aring;b&ouml;rjar respektive avslutar rullgardinsmenyn. <b>NAME</b>-attributet placeras i SELECT-taggen f&ouml;r att hela menyn skall f&aring; samma namn oavsett vad bes&ouml;karen v&auml;ljer.<br>
+                  <b>VALUE</b>-attributet &auml;r placerat i <b>OPTION</b>-taggen eftersom v&auml;rdet som formul&auml;ret ska skicka &auml;r olika f&ouml;r de olika val som finns. Surfaren ser inte value-v&auml;rdet och texten mellan OPTION-taggarna f&ouml;ljer inte med till formul&auml;ret. <br>
+  S&aring; h&auml;r ser koden ut:<br>
+  <br>
+  <b>&lt;FORM&gt;<br>
+&lt;SELECT NAME</b>="mat"&gt;<br>
+  <b>&lt;OPTION VALUE</b>="pizza"&gt;Pizza<br>
+  <b>&lt;OPTION VALUE</b>="pasta"&gt;Pasta<br>
+  <b>&lt;OPTION VALUE</b>="polsa"&gt;P&ouml;lsa<br>
+  <b>&lt;/SELECT&gt;<br>
+&lt;/FORM&gt;</b></p>
+      <form>
+ <b>
+        <select name=mat>
+          <option value=pizza>Pizza 
+          <option value=pasta>Pasta 
+          <option value=polsa>P&ouml;lsa 
+        </select>
+        </b>
+      </form>
+      <hr>
+      <p><b>S&auml;ndknapp (submit) och rensaknapp</b> <b>(reset)</b><br>
+  Till ett formul&auml;r h&ouml;r ocks&aring; en eller flera kommandoknappar. N&auml;r anv&auml;ndaren klickar p&aring; knappen skickas formul&auml;rets inneh&aring;ll till dig. Det &auml;r ocks&aring; vanligt att man har en knapp d&auml;r anv&auml;ndaren kan radera all inskriven text i formul&auml;ret. H&auml;r anv&auml;nds formul&auml;robjekten <b>SUBMIT</b> och <b>RESET</b>. Attributen <b>NAME</b> och <b>VALUE</b> anv&auml;nds ocks&aring; h&auml;r.<br>
+   <b>&lt;FORM&gt;</b><br>
+&lt;<b>INPUT TYPE=SUBMIT NAME</b>=&quot;skicka&quot; <b>VALUE</b>=&quot;Skicka&quot;&gt;<br>
+&lt;<b>INPUT TYPE=RESET NAME</b>=&quot;radera&quot; <b>VALUE</b>=&quot;Radera&quot;&gt;<br>
+  <b>&lt;/FORM&gt;</b></p>
+      <form>
+        <input type=submit name=skicka value=Skicka>
+        <input type=reset name=radera value=Radera>
+      </form>
+      <hr>
+      <p><b>E-postknapp</b><br>
+         Du kan ocks&aring; g&ouml;ra en s&auml;ndknapp som skickar direkt till din e-post. Detta fungerar om du anv&auml;nder Javascript. H&auml;r &auml;r det viktigt att omge v&auml;rdet med citattecken och mailadressen med apostrofer.<br>
+                  <b>&lt;FORM ACTION=&quot;post&quot;&gt;</b><br>
+&lt;<b>INPUT TYPE=BUTTON NAME</b>=&quot;epost&quot; <b>VALUE</b>=Skicka e-post&quot;<br>
+  onClick=&quot;parent.location= 'mailto:flitiga@lisa.se'&quot;&gt; <br>
+      <form action="post">
+        <input type="button" name="epost" value="Skicka e-post"
+onClick="parent.location='flitiga@lisa.se'">
+      </form>
+      <hr>
+      <p><b>Filer</b><br>
+          I bland kanske man vill att anv&auml;ndaren skall skicka med filer tillsammans med formul&auml;ret. Detta &auml;r inte att rekommendera eftersom du kan f&aring; en massa skr&auml;pfiler som tar stor plats. Denna mekanism har inte heller fullt st&ouml;d av alla webbl&auml;sare och &auml;r ganska ineffektiv. Studera nedanst&aring;ende exempel:
+      <p><br>
+            <strong>&lt;FORM METHOD=&quot;post&quot; action=&quot;filkoll.cgi&quot;</strong><strong> &gt;<br>
+  Ange filen: &lt;INPUT TYPE=&quot;file&quot; NAME=&quot;filen&quot;&gt;<br>
+&lt;/FORM&gt; </font></strong>
+      <form name="form1" enctype="multipart/form-data" method="post" action="">
+        <p>Ange filen:
+            <input name="filen" type="file" size="30" maxlength="40">
+        </p>
+      </form>
+      <p align="center"><strong><a href="Uppgifter2/uppgift9.htm" target="_blank">B&ouml;rja med uppgift 9! </a></strong></p>
+</div>
+<div id="kolumn2">  
+  <h3 align="left"> Resurser</h3>
+  <p align="left"><a href="Resurser/studierod.htm" target="_blank">Studier&aring;d</a><br>
+    <a href="Resurser/fargkarta.htm" target="_blank">Webbs&auml;kra f&auml;rger </a><br>
+        <a href="Resurser/taggarkiv.htm" target="_blank">Taggarkiv</a><br>
+        <a href="Resurser/lankarkiv.htm" target="_blank">L&auml;nkarkiv</a><br>
+        <a href="Resurser/kapitelguide.htm" target="_blank">Kapitelguide
+        </a><br>
+        <a href="slutuppgift.htm" target="_blank">Slutuppgift
+        </a><br>
+      <a href="Resurser/utvardering.htm" target="_blank">Utv&auml;rdering</a> </p>
+  <h3 align="left">        <br>
+        <br>
+     </h3>
+</div>
+</div>
+ <div id="sidfot">
+   <div align="left"><a href="mailto:carina.minell@harnosand.se">Carina Minell ©</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+Rekommenderad uppl&ouml;sning: 1152*864&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+Senast uppdaterad: 090819 </div>
+ </div>
+</div>
+</body>
+</html>

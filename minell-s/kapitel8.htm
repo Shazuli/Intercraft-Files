@@ -1,0 +1,224 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>Minell´s HTML - Kapitel 8 - Tabeller</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="generator" content="Dreamweaver MX, CSS, Anteckningar">
+<meta name="keywords" content="HTML-kurs, html, html-editorer, scriptspråk">
+<meta name="description" content="Denna sida är en HTML-kurs för nybörjare. Sidan innehåller både fakta, koder och uppgifter.">
+<meta name="author" content="Copyright Carina Minell">
+<link href="layout.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="layout">
+<div id="sidhuvud">
+  <h2><a href="Kapitel2/index.htm"><img src="bilder2/nylogga2.gif" alt="Länk till startsidan" width="471" height="90" border="0"></a></h2>
+  </div>
+<div id="menycontainer">
+<ul>
+    <li><a href="index.htm" >Startsida</a></li>
+	<li><a href="kapitel1.htm" >Kapitel 1</a></li>
+    <li><a href="kapitel2.htm">Kapitel 2</a></li>
+    <li><a href="kapitel3.htm">Kapitel 3</a></li>
+    <li><a href="kapitel4.htm">Kapitel 4</a></li>
+	<li><a href="kapitel5.htm">Kapitel 5</a></li>
+    <li><a href="kapitel6.htm">Kapitel 6</a></li>
+    <li><a href="kapitel7.htm">Kapitel 7</a></li>
+    <li><a href="kapitel8.htm" id="current">Kapitel 8</a></li>
+	<li><a href="kapitel9.htm">Kapitel 9</a></li>
+    <li><a href="kapitel10.htm">Kapitel 10</a></li>
+    <li><a href="kapitel11.htm">Kapitel 11</a></li>
+  
+</ul>
+</div>
+<div id="kolumncontainer">
+<div id="kolumn1">
+<h1>Kapitel 8 - Tabeller </h1>
+<p> Tabeller i HTML &auml;r ett ganska stort omr&aring;de. Det var f&ouml;rst 1997 i version 3.2 som tabeller kom med i HTML-standarden. <br>
+  <br>
+Tabeller kan anv&auml;ndas till en m&auml;ngd olika saker. Man anv&auml;nder i huvudsak tabeller till att placera saker i webbsidor. Man kan med hj&auml;lp av tabeller f&aring; total kontroll &ouml;ver en webbsidas utseende genom att placera text och bilder som man vill. Inne i tabellens celler kan man placera till exempel: </p>
+<ul>
+  <li>Text
+    <li>Bilder
+    <li>Listor
+    <li>L&auml;nkar
+    <li>Andra tabeller </li>
+</ul>
+<p>N&auml;r ni har kollat p&aring; andras webbsidor har ni kanske sett att det har st&aring;tt n&aring;t i stil med "Den h&auml;r sidan ser b&auml;st ut i 800*600 uppl&ouml;sning". Det konstrukt&ouml;ren av webbsidan d&aring; f&ouml;rmodligen har gjort &auml;r att han helt enkelt har gjort en <strong>tabell som &auml;r 800 pixlar bred </strong>. Den tabellen har i sin tur f&aring;tt omsluta allt inneh&aring;ll i webbsidan. Detta &auml;r ett bra s&auml;tt att f&aring; webbsidor att se bra ut p&aring; s&aring; m&aring;nga sk&auml;rmar som m&ouml;jligt. <br>
+    <br>
+  Fortfarande &auml;r standarduppl&ouml;sningen p&aring; sk&auml;rmar 800*600 men det finns mindre storlekar. N&aring;t som ser perfekt ut p&aring; en sk&auml;rm som har uppl&ouml;sningen 1024*768 &auml;r f&ouml;rmodligen alldeles f&ouml;r stort p&aring; en sk&auml;rm som har 800*600 som uppl&ouml;sning. T&auml;nk p&aring; detta i framtiden. J&auml;mf&ouml;r alltid dina sidor i olika datorer och olika webbl&auml;sare f&ouml;r att f&aring; fram en l&ouml;sning som ser bra ut i alla milj&ouml;er. </p>
+<p>En sak till att t&auml;nka p&aring; &auml;r att man aldrig b&ouml;r l&auml;mna tabellceller tomma pga. att webbl&auml;sare tolkar koden olika. Om du t.ex anv&auml;nder en bakgrundsf&auml;rg kommer Netscape inte att visa den om det inte finns n&aring;got inneh&aring;ll i cellen. Ett s&auml;tt att komma runt det problemet &auml;r att koda in ett mellanslag i cellen &amp;nbsp; (no breaking space). <br>
+</p>
+<p>Tabeller &auml;r nog det besv&auml;rligaste man kan syssla med i HTML s&aring; det kr&auml;ver ganska mycket tr&auml;ning innan man blir riktigt duktig p&aring; det. <br>
+  I den h&auml;r kursen skall vi bara g&ouml;ra enkla tabeller, vi spar tabellerna tills vi kommer till editorerna, som g&ouml;r arbetet enkelt. </p>
+<hr>
+<strong>Tabell-element </strong><br>
+Man skapar en tabell med taggen <strong>&lt;TABLE&gt; </strong>. Tabeller i HTML best&aring;r av en rubrik och ett antal rader. Varje rad best&aring;r i sin tur av ett antal celler (rutor). <br>
+<strong>TABLE </strong>-taggen kan ha 5 olika attribut: <br>
+<br>
+<table border="1" cellpadding="2" cellspacing="1">
+  <tr bgcolor="#a8c1c6">
+    <td width="30%"><p><strong>Attribut och v&auml;rden </strong></p></td>
+    <td width="70%"><p><strong>H&auml;ndelse och exempelkod </strong></p></td>
+  </tr>
+  <tr>
+    <td width="30%"><p><strong>ALIGN </strong><br>
+        (left, center och right) </p></td>
+    <td width="70%"><p>Styr tabellens justering i webbl&auml;sarens f&ouml;nster <br>
+            <strong>&lt;TABLE ALIGN="RIGHT"&gt;..&lt;/TABLE&gt; </strong></p></td>
+  </tr>
+  <tr>
+    <td width="30%"><p><strong>WIDTH </strong><br>
+        (anges i pixlar eller i procent) </p></td>
+    <td width="70%"><p>Styr tabellens bredd <br>
+            <strong>&lt;TABLE WIDTH="50%"&gt;..&lt;/TABLE&gt; </strong></p></td>
+  </tr>
+  <tr>
+    <td width="30%"><p><strong>BORDER </strong><br>
+        (0=ingen ram) </p></td>
+    <td width="70%"><p>Styr bredden p&aring; tabellens ram <br>
+            <strong>&lt;TABLE BORDER="1"&gt;..&lt;/TABLE&gt; </strong></p></td>
+  </tr>
+  <tr>
+    <td width="30%"><p><strong>CELLSPACING </strong><br>
+        (anges i pixlar) </p></td>
+    <td width="70%"><p>Styr mellanrummet mellan cellerna <br>
+            <strong>&lt;TABLE CELLSPACING="15"&gt;..&lt;/TABLE&gt; </strong></p></td>
+  </tr>
+  <tr>
+    <td width="30%"><p><strong>CELLPADDING </strong><br>
+        (anges i pixlar) </p></td>
+    <td width="70%"><p>Styr utrymmet mellan cellernas inneh&aring;ll och ramen runt dem. <br>
+            <strong>&lt;TABLE CELLPADDING="5"&gt;..&lt;/TABLE&gt; </strong></p></td>
+  </tr>
+</table>
+<p>(Ovanst&aring;ende tabell har attributen: align=center, width=90%, border=1, cellspacing=1, cellpadding=2)</p>
+<hr>
+<p><strong>Rubrik </strong><br>
+  Taggen <strong>&lt;CAPTION&gt; </strong>anv&auml;nds f&ouml;r att ange rubriken f&ouml;r en tabell. Attributet <strong>ALIGN </strong> best&auml;mmer om rubriken skall visas ovanf&ouml;r eller under tabellen. De tilll&aring;tna v&auml;rderna &auml;r <strong> TOP </strong>och <strong>BOTTOM </strong> och numera kan man faktiskt ocks&aring; ange om rubriken skall st&aring; till v&auml;nster om (ALIGN="LEFT") eller till h&ouml;ger (ALIGN="RIGHT") tabellen. Det som &auml;r lite besv&auml;rligt med den taggen &auml;r att det ser olika ut beroende p&aring; webbl&auml;sare. Om du skall anv&auml;nda taggen CAPTION skall denst&aring; direkt efter TABLE-taggen. <br>
+  <strong>&lt;TABLE&gt; </strong><br>
+  <strong>&lt;CAPTION ALIGN="BOTTOM"&gt; </strong>Denna rubrik visas under sj&auml;lva tabellen <strong><br>
+&lt;/CAPTION&gt; </strong><br>
+  <strong>&lt;/TABLE&gt; </strong></p>
+<strong></strong>
+<p><strong>Rubriker i celler </strong><br>
+  Taggen <strong> &lt;TH&gt; </strong>, st&aring;r f&ouml;r table heading och anv&auml;nds f&ouml;r att m&auml;rka ut rubriker i celler. Text som finns i denna cell blir automatiskt fet och centrerad. <br>
+  <strong>&lt;TABLE BORDER="1" WIDTH="50%" ALIGN="CENTER"&gt; </strong><br>
+  <strong>&lt;CAPTION ALIGN="TOP"&gt; <br>
+  </strong>Resutatet blir s&aring; h&auml;r: <strong><br>
+&lt;/CAPTION&gt; </strong><br>
+  <strong>&lt;TH&gt; </strong>Rubrikcell <strong>&lt;/TH&gt; </strong><br>
+  <strong>&lt;TR&gt; <br>
+&lt;TD&gt; </strong>Vanlig cell <strong>&lt;/TD&gt; </strong><br>
+  <strong>&lt;/TR&gt; <br>
+&lt;/TABLE&gt; 
+</strong></p>
+<table width=50%  border=1 align="center">
+  <caption align=top>
+  <font size="2" face="Verdana, Arial, Helvetica, sans-serif">Resultatet blir s&aring; h&auml;r:</font>
+  </caption>
+  <tr>
+    <th>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Rubrikcell</font></p></th>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Vanlig cell</font></p></td>
+</table>
+<p>&nbsp;</p>
+<table>
+  Resultatet blir s&aring; h&auml;r:</table>
+<hr>
+<p><strong>Rader och kolumner </strong> (celler) <br>
+  Tabeller delas upp i rader och kolumner. F&ouml;r att skapa en rad i en tabell anv&auml;nder man taggen <strong>&lt;TR&gt; </strong>, som st&aring;r f&ouml;r <strong>table row </strong>. I varje tabellrad finns det tabell-celler. F&ouml;r att skapa tabellceller anv&auml;nder man taggen <strong> &lt;TD&gt; </strong>, som st&aring;r f&ouml;r <strong>table data </strong>. <br>
+  H&auml;r nedan &auml;r ett kod-exempel p&aring; en tabell som best&aring;r av 1 rad som i sin tur &auml;r best&aring;ende av 4 kolumner (celler). <br>
+  <strong>&lt;TABLE&gt; </strong><br>
+  <strong>&lt;TR&gt; </strong><br>
+  <strong>&lt;TD&gt; </strong>Tabeller <strong>&lt;/TD&gt; </strong><br>
+  <strong>&lt;TD&gt; </strong>&auml;r <strong>&lt;/TD&gt; </strong><br>
+  <strong>&lt;TD&gt; </strong>lite <strong>&lt;/TD&gt; </strong><br>
+  <strong>&lt;TD&gt; </strong>kr&aring;ngliga i HTML <strong>&lt;/TD&gt; </strong><br>
+  <strong>&lt;/TR&gt; </strong><strong><br>
+&lt;/TABLE&gt; </strong></p>
+<p align="left">Man kan om man vill definiera storlek p&aring; tabellceller. Genom att anv&auml;nda attributen <strong>WIDTH </strong> och <strong>HEIGHT </strong> g&ouml;r man det. V&auml;rdena man s&auml;tter till width och height &auml;r antingen procent eller pixlar (bildpunkter). </p>
+<p align="left"><br>
+  Det finns ytterligare ett par attribut till &lt;TD&gt;, som anv&auml;nds n&auml;r du vill justera cellens inneh&aring;ll. Om du vill justera: </p>
+<ul>
+  <li>
+    <div align="left"><strong>H</strong><strong>orisontalt </strong> anv&auml;nder du &lt; <strong>ALIGN </strong>="left/right/center/justify&quot;&gt; <br>
+    </div>
+  <li>
+    <div align="left"><strong>Vertikalt </strong> anv&auml;nder du <strong>ALIGN </strong>="top/middle/baseline/bottom"&gt;</div>
+  </li>
+  </ul>
+    <hr>
+  <p align="left"><strong>Sl&aring; ihop celler och rader </strong><br>
+  Med kommandona <strong>COLSPAN </strong> (kolumner) och <strong> ROWSPAN </strong> (rader) kan du sammanfoga kolumner och rader i en tabell. Du talar sj&auml;lv om hur m&aring;nga rader eller kolumner du vill sl&aring; ihop genom att ange en siffra som v&auml;rde. <br>
+  <strong>&lt;TD ROWSPAN="2"&gt; </strong></p>
+  <hr>
+  <p align="left"><strong>F&auml;rg i tabell </strong><br>
+  Om du vill piffa upp <strong>hela </strong> din tabell med en bakgrundsf&auml;rg anger du detta i <strong>TABLE </strong>-taggen. <strong><br>
+&lt;TABLE BORDER="1" WIDTH="50%" ALIGN="CENTER" BGCOLOR="#FF9999"&gt; </strong><br>
+  <strong>&lt;TH&gt; </strong>Rubrikcell <strong>&lt;/TH&gt; </strong><br>
+  <strong>&lt;TR&gt; <br>
+&lt;TD&gt; </strong>Vanlig cell <strong>&lt;/TD&gt; </strong><br>
+  <strong>&lt;/TR&gt; <br>
+&lt;/TABLE&gt; </strong></p>
+<table width=50%  border=1 align="center" bgcolor="#FF9999">
+  <tr>
+    <th>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Rubrikcell</font></p></th>
+  </tr>
+  <tr>
+    <td>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Vanlig cell</font></p></td>
+</table>
+<p><br>
+  Om du vill &auml;ndra f&auml;rg i enstaka cell anv&auml;nder du <strong>TH </strong> eller <strong>TD </strong>-taggen. <br>
+  <strong>&lt;TABLE BORDER="1" WIDTH="50%" ALIGN="CENTER" &gt; </strong><br>
+  <strong>&lt;TH BGCOLOR="#FF99999"&gt; </strong>Rubrikcell <strong>&lt;/TH&gt; </strong><br>
+  <strong>&lt;TR&gt; <br>
+&lt;TD BGCOLOR="#99FFFF"&gt; </strong>Vanlig cell <strong>&lt;/TD&gt; </strong><br>
+  <strong>&lt;/TR&gt; <br>
+&lt;/TABLE&gt; 
+  </strong></p>
+<table width=50%  border=1 align="center" bgcolor="#FF9999">
+  <tr bgcolor="#FF9999">
+    <th>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Rubrikcell</font></p></th>
+  </tr>
+  <tr bgcolor="#99FFFF">
+    <td>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Vanlig cell</font></p></td>
+</table>
+<br>
+<strong></strong>
+<h3>&nbsp;</h3>
+<p align="center"><strong><a href="Uppgifter2/uppgift8.htm" target="_blank">B&ouml;rja med uppgift 8! </a></strong></p>
+</div>
+<div id="kolumn2">  
+  <h3 align="left"> Resurser</h3>
+  <p align="left"><a href="Resurser/studierod.htm" target="_blank">Studier&aring;d</a><br>
+    <a href="Resurser/fargkarta.htm" target="_blank">Webbs&auml;kra f&auml;rger </a><br>
+        <a href="Resurser/taggarkiv.htm" target="_blank">Taggarkiv</a><br>
+        <a href="Resurser/lankarkiv.htm" target="_blank">L&auml;nkarkiv</a><br>
+        <a href="Resurser/kapitelguide.htm" target="_blank">Kapitelguide
+        </a><br>
+        <a href="slutuppgift.htm" target="_blank">Slutuppgift
+        </a><br>
+      <a href="Resurser/utvardering.htm" target="_blank">Utv&auml;rdering</a> </p>
+  <h3 align="left">        <br>
+        <br>
+     </h3>
+</div>
+</div>
+ <div id="sidfot">
+   <div align="left"><a href="mailto:carina.minell@harnosand.se">Carina Minell ©</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+Rekommenderad uppl&ouml;sning: 1152*864&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+Senast uppdaterad: 090819 </div>
+ </div>
+</div>
+</body>
+</html>

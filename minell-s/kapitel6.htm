@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>Minell´s HTML - Kapitel 6 - Grafik på webbsidor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="generator" content="Dreamweaver MX, CSS, Anteckningar">
+<meta name="keywords" content="HTML-kurs, html, html-editorer, scriptspråk">
+<meta name="description" content="Denna sida är en HTML-kurs för nybörjare. Sidan innehåller både fakta, koder och uppgifter.">
+<meta name="author" content="Copyright Carina Minell">
+<link href="layout.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="layout">
+<div id="sidhuvud">
+  <h2><a href="Kapitel2/index.htm"><img src="bilder2/nylogga2.gif" alt="Länk till startsidan" width="471" height="90" border="0"></a></h2>
+  </div>
+<div id="menycontainer">
+<ul>
+    <li><a href="index.htm" >Startsida</a></li>
+	<li><a href="kapitel1.htm" >Kapitel 1</a></li>
+    <li><a href="kapitel2.htm">Kapitel 2</a></li>
+    <li><a href="kapitel3.htm">Kapitel 3</a></li>
+    <li><a href="kapitel4.htm">Kapitel 4</a></li>
+	<li><a href="kapitel5.htm">Kapitel 5</a></li>
+    <li><a href="kapitel6.htm" id="current">Kapitel 6</a></li>
+    <li><a href="kapitel7.htm">Kapitel 7</a></li>
+    <li><a href="kapitel8.htm">Kapitel 8</a></li>
+	<li><a href="kapitel9.htm">Kapitel 9</a></li>
+    <li><a href="kapitel10.htm">Kapitel 10</a></li>
+    <li><a href="kapitel11.htm">Kapitel 11</a></li>
+
+</ul>
+</div>
+<div id="kolumncontainer">
+<div id="kolumn1">
+<h1>Kapitel 6 - Grafik p&aring; webbsidor </h1>
+<p>Ett stort omr&aring;de inom webbsidor och HTML &auml;r bilder och grafik, vi har i tidigare avsnitt l&auml;rt oss om f&auml;rger p&aring; webben, som &auml;r en liten del av grafiken p&aring; en webbsida. </p>
+<p>Bilder och texter omfattas av copyrightlagen och upphovsr&auml;ttslagen, s&aring; man m&aring;ste fr&aring;ga f&ouml;rst och f&aring; tillst&aring;nd innan man anv&auml;nder andras bilder. Det finns olika s&auml;tt att f&aring; tag p&aring; bilder. Du kan rita dem sj&auml;lv i n&aring;got grafikprogram, l&auml;sa in foton, anv&auml;nda fria bilder (ClipArt), eller k&ouml;pa bilder ur ett bildarkiv.<br>
+  Ofta anv&auml;nder man sig av bilder f&ouml;r att g&ouml;ra en webbsida mer attraktiv, problemet med bilder och grafik &auml;r att de tar upp utrymme och kan g&ouml;ra din webbsida tungladdad. <br>
+  Se d&auml;rf&ouml;r till att inte anv&auml;nda n&aring;gon on&ouml;dig grafik. Varje bild b&ouml;r ha ett <strong>syfte eller en funktion att fylla</strong>. S&auml;rskilt gr&auml;nssnittet (interface p&aring; engelska) m&aring;ste vara anv&auml;ndarv&auml;nligt och l&auml;ttf&ouml;rst&aring;eligt. Gr&auml;nssnittet utg&ouml;rs av de element som inte byts ut n&auml;r du hoppar till en ny sida. Dit h&ouml;r t ex menyer, knappar och dylikt. I s&aring;dana fall &auml;r det j&auml;tteviktigt att anv&auml;ndaren f&ouml;rst&aring;r hur dessa element fungerar och hur man hittar r&auml;tt bland de olika sidorna. </p>
+<p>Detta kapitel kommer bara ber&ouml;ra en liten del av det stora omr&aring;de som bilder och grafik &auml;r. Vi kommer att ta upp lite om uppl&ouml;sning, bildformat och vilka taggar som anv&auml;nds f&ouml;r bilder.</p>
+<p><img src="bilder2/brafarg.gif" alt="Exempelknapp" width="120" height="70"> <img src="bilder2/uselfarg.gif" alt="Exempelknapp" width="120" height="70"><br>
+</p>
+<p><strong>Uppl&ouml;sning </strong><br>
+  Bildsk&auml;rmen p&aring; en dator &auml;r uppdelad i ett rutm&ouml;nster av sm&aring; punkter (pixlar) som tillsammans bygger upp det som visas p&aring; sk&auml;rmen. Hur m&aring;nga pixlar som visas beror p&aring; sk&auml;rmens uppl&ouml;sning. Ju h&ouml;gre uppl&ouml;sning, desto fler och mindre pixlar. Nedan finns n&aring;gra vanliga uppl&ouml;sningar och sk&auml;rmstorlekar de ofta f&ouml;rknippas med. </p>
+<p>&nbsp;</p>
+<table width="285" border="1" align="center" cellpadding="2" cellspacing="1" bordercolor="#a8c1c6">
+  <tr bgcolor="#a8c1c6">
+    <td width="60%"><p align="center"><strong>Uppl&ouml;sning (bredd*h&ouml;jd) </strong></p></td>
+    <td width="40%" bordercolor="#a8c1c6" bgcolor="#a8c1c6"><p><strong>Sk&auml;rmstorlek </strong></p></td>
+  </tr>
+  <tr>
+    <td width="60%"><p>640*480 </p></td>
+    <td width="40%"><p>14 tum </p></td>
+  </tr>
+  <tr>
+    <td width="60%"><p>800*600 </p></td>
+    <td width="40%"><p>15 tum </p></td>
+  </tr>
+  <tr>
+    <td width="60%"><p>1024*768 </p></td>
+    <td width="40%"><p>17 tum </p></td>
+  </tr>
+  <tr>
+    <td width="60%"><p>1280*1024 </p></td>
+    <td width="40%"><p>21 tum </p></td>
+  </tr>
+</table>
+<br>
+<p>&nbsp;</p>
+<p><strong>Bildformat </strong><br>
+    N&auml;r du v&auml;ljer bilder till din webbsida &auml;r det viktigt att t&auml;nka p&aring; <strong>storleken </strong> p&aring; bilderna och vilket <strong>bildformat </strong> som &auml;r l&auml;mpligast. Det finns tre bildformat som anv&auml;nds p&aring; webben: <strong>gif, jpg </strong> och <strong>png </strong>. Framf&ouml;rallt anv&auml;nds gif och jpg -formaten. </p>
+<p><strong>GIF - Graphics Interchange Format </strong><br>
+  Anv&auml;nds till bilder med relativt f&aring; f&auml;rger (max 256) som teckningar och textgrafik t ex. bildknappar, logotyper, bakgrundsbilder, animeringar och genomskinliga bilder. <br>
+  GIF-formatet har icke f&ouml;rst&ouml;rande kompression dvs. bilden kan &aring;terskapas till 100%. Andra f&ouml;rdelar formatet har &auml;r att bilder kan g&ouml;ras interlaced (bilden v&auml;xer fram stegvis) och att en f&auml;rg kan g&ouml;ras transparent (genomskinlig). En bild i i detta format har fil&auml;ndelsen <strong>.gif</strong>.</p>
+<hr>
+<p><strong>JPG - Joint Photograpic Experts Group </strong><br>
+  L&auml;mpar sig f&ouml;r bilder och fotografier som inneh&aring;ller m&aring;nga f&auml;rger. Formatet kan hantera drygt 16 miljoner f&auml;rger! JPG-formatet har s&aring; kallad f&ouml;rst&ouml;rande kompression dvs. kompressionen tar bort detaljer och nyanser ur bilderna. En bild i JPG-format har fil&auml;ndelsen <strong>.jpg </strong> eller . <strong>jpeg</strong>.</p>
+<hr>
+<p><strong>PNG - Portable Network Grapics </strong><strong>(ping) </strong><br>
+  I och med allt patentbr&aring;k kring GIF&acute;s komprimeringsmetod sattes det rej&auml;l fart att utveckla en ers&auml;ttare. Resultatet blev PNG som &auml;r t&auml;nkt som en ers&auml;ttare till GIF-formatet, dvs. m&aring;let med PNG var att skapa ett bildformat utan GIF: s begr&auml;nsningar och v&auml;l anpassat till Internet. I oktober 1996 blev PNG en standard som fastst&auml;lldes av W3C. <br>
+  I motsats till GIF kan en PNG-fil inneh&aring;lla 24-bitars grafik (16,7 miljoner f&auml;rger) och faktiskt &auml;nnu mer (48 bitar). I GIF g&aring;r det bara ha en transparent f&auml;rg, medan det i PNG g&aring;r att spara 256 transparenta f&auml;rger. PNG g&aring;r ocks&aring; att g&ouml;ra Interlaced. Det som inte fungerar med PNG &auml;r att g&ouml;ra animationer. <br>
+  Trots att PNG-formatet har en massa goda egenskaper har det tagit tid f&ouml;r formatet att bli accepterat p&aring; Internet. Problemen &auml;r relaterade till att webbl&auml;sarna inte st&ouml;djer formatet p&aring; ett riktigt s&auml;tt och att PNG-filerna blir st&ouml;rre pga. icke f&ouml;rst&ouml;rande komprimering. Kort sagt kan man s&auml;ga att PNG kombinerar de bra egenskaperna fr&aring;n GIF och JPEG. En bild i PNG-format har fil&auml;ndelsen <strong>.png </strong>. </p>
+<p>Nedan kan du se samma bild i olika bildformat. Kvalit&eacute;tm&auml;ssigt &auml;r bilderna ganska lika pga en l&aring;g komprimering men storleksm&auml;ssigt &auml;r JPG-formatet att f&ouml;redra f&ouml;r denna bild. <br>
+</p>
+<table border="1" align="center" cellpadding="2" cellspacing="1">
+  <tr>
+    <td><p><strong>GIF </strong></p></td>
+    <td><p><strong>JPG </strong></p></td>
+    <td><p><strong>PNG </strong></p></td>
+  </tr>
+  <tr>
+    <td><img height="122" src="bilder2/stoffe.gif" width="150"></td>
+    <td><img height="122" src="bilder2/stoffe.jpg" width="150"></td>
+    <td><img src="bilder2/stoffe.png" width="150" height="122"></td>
+  </tr>
+  <tr>
+    <td><p>12kb <br>
+        2 sek </p></td>
+    <td><p>7kb <br>
+        1 sek </p></td>
+    <td><p>43kb <br>
+        7 sek </p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><strong>Bild-taggar </strong><br>
+  F&ouml;r att "montera" bilder och grafik p&aring; din webbsida anv&auml;nds normalt html-taggen <strong>IMG </strong>, som betyder image. Denna tagg kompletteras med attributet <strong>SRC </strong>, som betyder source (k&auml;lla). Efter SRC anger du vad bilden heter och var den ligger (s&ouml;kv&auml;gen). <br>
+  <strong>&lt;IMG SRC="apa.jpg"&gt; </strong><br>
+  <br>
+  Man brukar ofta ocks&aring; ange bildens storlek i pixlar f&ouml;r att underl&auml;tta inladdningen av sidan. F&ouml;r att veta en bilds storlek kan du &ouml;ppna den i ett bildbehandlingsprogram (PSP, Photoshop) och titta l&auml;ngst ner i statusf&auml;ltet d&auml;r bildstorleken &auml;r angiven i pixlar. &Auml;ndra inte bildens storlek godtyckligt i HTML-koden, den kan bli f&ouml;rvr&auml;ngd d&aring;. G&ouml;r bilden i r&auml;tt storlek i ett bildbehandlingsprogram. <br>
+  <strong>&lt;IMG SRC="apa.jpg" </strong><strong> WIDTH="300" HEIGHT="200"&gt; </strong></p>
+<p>Du kan justera dina bilder b&aring;de horisontellt och verikalt genom att l&auml;gga till attributet <strong>ALIGN </strong> tillsammans med IMG-taggen. Align betyder justera och ber&auml;ttar hur bilden skall placeras i f&ouml;rh&aring;llande till den textrad d&auml;r taggen &lt;IMG&gt; finns. <br>
+  Titta p&aring; tabellen nedan: <br>
+</p>
+<table width="60%" border="1" align="center" cellpadding="2" cellspacing="1">
+  <tr bgcolor="#a8c1c6">
+    <td><p><strong>Attribut </strong></p></td>
+    <td><p><strong>Justering </strong></p></td>
+  </tr>
+  <tr>
+    <td><p align="left">ALIGN=LEFT </p></td>
+    <td><p align="left">V&auml;nsterjusterad </p></td>
+  </tr>
+  <tr>
+    <td><p align="left">ALIGN=CENTER </p></td>
+    <td><p align="left">Centrerad </p></td>
+  </tr>
+  <tr>
+    <td><p align="left">ALIGN=RIGHT </p></td>
+    <td><p align="left">H&ouml;gerjusterad </p></td>
+  </tr>
+  <tr>
+    <td><p align="left">ALIGN=TOP </p></td>
+    <td><p align="left">&Ouml;verst p&aring; sidan </p></td>
+  </tr>
+  <tr>
+    <td><p align="left">ALIGN=BOTTOM </p></td>
+    <td><p align="left">Nederst p&aring; sidan </p></td>
+  </tr>
+  <tr>
+    <td><p align="left">ALIGN=MIDDLE </p></td>
+    <td><p align="left">Mitt p&aring; sidan </p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p align="center"><img height="63" src="bilder2/postlada.jpg" width="63"> En bild med ALIGN="MIDDLE" </p>
+<p><strong>&lt;IMG SRC="postlada.jpg" WIDTH="63" HEIGHT="63" ALIGN="middle"&gt; </strong></p>
+<p>Ytterligare en finess &auml;r att du kan best&auml;mma hur mycket luft det skall vara reunt en bild b&aring;de horisontellt och vertikalt genom attributen <strong>HSPACE </strong> och <strong>VSPACE </strong>, v&auml;rdet anges i punkter. <strong><br>
+      <strong>&lt;IMG SRC="apa.jpg" WIDTH="300" HEIGHT="200" ALIGN="RIGHT" HSPACE="20" VSPACE="20"&gt; </strong></strong></p>
+<p>Med attributet <strong>ALT </strong>="text" tillsammans med IMG SRC kan du skriva in en alternativ text mellan citattecknen. Detta kan vara bra om din bes&ouml;kare valt bort att visa bilder och grafik i sin webbl&auml;sare. <br>
+    <strong>&lt;IMG SRC="apa.jpg" WIDTH="300" HEIGHT="200" <br>
+  ALT="En bild p&aring; en apa"&gt;</strong></p>
+<hr>
+<p><strong>Bildl&auml;nkar </strong><br>
+  En bild kan, precis som en text eller ett ord, fungera som l&auml;nk till en annan sida. L&auml;nktaggarna placeras d&aring; runt bildtaggen: <br>
+  <strong>&lt;A HREF="djur.html"&gt;&lt;IMG SRC="apa.jpg"&gt;&lt;/A&gt; </strong></p>
+<p>Som en angivelse p&aring; att bilden nu fungerar som en l&auml;nk f&aring;r den en bl&aring; (eller annan l&auml;nkf&auml;rg om du har &auml;ndrat) ram runt sig. Denna, ofta st&ouml;rande dekoration tas l&auml;tt bort genom att s&auml;tta <strong>BORDER=0 </strong> i bildtaggen: <br>
+    <strong>&lt;A HREF="djur.html"&gt; <br>
+&lt;IMG SRC="apa.jpg BORDER="0" &gt;&lt;/A&gt;</strong></p>
+<hr>
+<p><strong>Bakgrundsbilder </strong><br>
+  Det finns dock ytterligare ett s&auml;tt att l&auml;gga in bilder p&aring; din webbsida, n&auml;mligen som en bakgrund till hela sidan. Denna bild l&auml;ggs d&aring; in som ett attribut till <strong>BODY </strong>-taggen: <br>
+  <strong>&lt;BODY BACKGROUND="bakgrundsbild.gif"&gt; </strong></p>
+<p>En s&aring;dan bild kan vara hur liten eller stor som helst. &Auml;r den st&ouml;rre &auml;n webbl&auml;sarf&ouml;nstret syns bara en del av den. &Auml;r den mindre upprepas den i vertikal och horisontell riktning s&aring; att ett m&ouml;nster skapas vilket kan vara effektfullt. Man kan &auml;ven i nyare webbl&auml;sare l&auml;gga bakgrundsbilder i tabeller.</p>
+<hr>
+<p><strong>Klickbara bilder - Image Maps </strong><br>
+  Du kan skapa bilder som har speciella klickbara omr&aring;den. Det &auml;r ganska kr&aring;ngligt om man skall koda detta sj&auml;lv med HTML, s&aring; det hoppar vi &ouml;ver tills vi b&ouml;rjar arbeta med editorer, d&auml;r det &auml;r enkelt. </p>
+<h3>&nbsp;</h3>
+<p align="center"><strong><a href="Uppgifter2/uppgift6.htm" target="_blank">B&ouml;rja med uppgift 6! </a></strong></p>
+</div>
+<div id="kolumn2">  
+  <h3 align="left"> Resurser</h3>
+  <p align="left"><a href="Resurser/studierod.htm" target="_blank">Studier&aring;d</a><br>
+    <a href="Resurser/fargkarta.htm" target="_blank">Webbs&auml;kra f&auml;rger </a><br>
+        <a href="Resurser/taggarkiv.htm" target="_blank">Taggarkiv</a><br>
+        <a href="Resurser/lankarkiv.htm" target="_blank">L&auml;nkarkiv</a><br>
+        <a href="Resurser/kapitelguide.htm" target="_blank">Kapitelguide
+        </a><br>
+        <a href="slutuppgift.htm" target="_blank">Slutuppgift
+        </a><br>
+      <a href="Resurser/utvardering.htm" target="_blank">Utv&auml;rdering</a> </p>
+  <h3 align="left">        <br>
+        <br>
+     </h3>
+</div>
+</div>
+ <div id="sidfot">
+   <div align="left"><a href="mailto:carina.minell@harnosand.se">Carina Minell ©</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+
+Rekommenderad uppl&ouml;sning: 1152*864&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+Senast uppdaterad: 090819 </div>
+ </div>
+</div>
+</body>
+</html>

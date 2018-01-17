@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>Minell´s HTML - Kapitel 10 - Ramar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="generator" content="Dreamweaver MX, CSS, Anteckningar">
+<meta name="keywords" content="HTML-kurs, html, html-editorer, scriptspråk">
+<meta name="description" content="Denna sida är en HTML-kurs för nybörjare. Sidan innehåller både fakta, koder och uppgifter.">
+<meta name="author" content="Copyright Carina Minell">
+<link href="layout.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="layout">
+<div id="sidhuvud">
+  <h2><a href="Kapitel2/index.htm"><img src="bilder2/nylogga2.gif" alt="Länk till startsidan" width="471" height="90" border="0"></a></h2>
+  </div>
+<div id="menycontainer">
+<ul>
+    <li><a href="index.htm" >Startsida</a></li>
+	<li><a href="kapitel1.htm" >Kapitel 1</a></li>
+    <li><a href="kapitel2.htm">Kapitel 2</a></li>
+    <li><a href="kapitel3.htm">Kapitel 3</a></li>
+    <li><a href="kapitel4.htm">Kapitel 4</a></li>
+	<li><a href="kapitel5.htm">Kapitel 5</a></li>
+    <li><a href="kapitel6.htm">Kapitel 6</a></li>
+    <li><a href="kapitel7.htm">Kapitel 7</a></li>
+    <li><a href="kapitel8.htm">Kapitel 8</a></li>
+	<li><a href="kapitel9.htm">Kapitel 9</a></li>
+    <li><a href="kapitel10.htm" id="current">Kapitel 10</a></li>
+    <li><a href="kapitel11.htm">Kapitel 11</a></li>
+  
+</ul>
+</div>
+<div id="kolumncontainer">
+<div id="kolumn1">
+<h1>Kapitel 10 - Ramar (frames) </h1>
+<p align="left">N&auml;r Netscape sl&auml;ppte webbl&auml;saren Navigator 2.0 introducerades frames. N&auml;stan samtliga av dagens webbl&auml;sare kan visa ramar. Det &auml;r bara ett f&aring;tal gamla som inte klarar av att visa ramar men fr&aring;n och med Explorer 3.0 och Netscape 2.0 s&aring; fungerar det. <br>
+    <br>
+  Frames som p&aring; svenska kallas ramar g&ouml;r det m&ouml;jligt f&ouml;r dig som skriver HTML att dela upp webbl&auml;sarens f&ouml;nster i olika delar. Detta inneb&auml;r att man visar olika HTML-dokument samtidigt i samma webbl&auml;sarf&ouml;nster. Denna webbsida &auml;r t.ex uppbyggd med ramar. Ramar fr&auml;mst f&ouml;r att g&ouml;ra sidor mer l&auml;ttnavigerade. </p>
+<p align="left">Jag har delat upp denna sida i fyra ramar. De tv&aring; &ouml;versta inneh&aring;ller en logotype respektive en meny f&ouml;r kapitlena. Den v&auml;nstra ramen inneh&aring;ller en meny och i den h&auml;r ramen finns lektionstexterna. Ni ser kanske sj&auml;lv f&ouml;rdelarna med att ha en s&aring;dan struktur p&aring; webbsidan. Menyn uppe och till v&auml;nster beh&ouml;ver t ex inte laddas om varje g&aring;ng du klickar p&aring; n&aring;gon l&auml;nk och detta g&ouml;r sidan snabbare.</p>
+<p align="left">&nbsp;</p>
+<p><strong>Frameset - indexfilen <br>
+</strong>N&auml;r man arbetar med ramar s&aring; talar man om f&ouml;r webbl&auml;saren hur den skall dela upp sig i ramar via <strong> index.html </strong> (startsidan, styrsida). Man kan dela in en sida i kolumner och rader (cols och rows). </p>
+<hr>
+
+<strong>Enkla ramar </strong><br>
+Nedanst&aring;endel HTML-exempel talar om f&ouml;r webbl&auml;saren att den skall dela upp sig sj&auml;lv i angivna ramar ett s&aring; kallat <strong>FRAMESET </strong>. S&aring; h&auml;r kan koden se ut i en s&aring;dan fil.
+<p>&lt;HTML&gt; <br>
+&lt;HEAD&gt; <br>
+&lt;TITLE&gt;Ramar&lt;/TITLE&gt; <br>
+&lt;/HEAD&gt; <br>
+  <strong>&lt;FRAMESET ROWS="20%, 80%"&gt; <br>
+&lt;FRAME SRC="top.html"&gt; <br>
+&lt;FRAME SRC="main.html"&gt; <br>
+&lt;/FRAMESET&gt; </strong><br>
+&lt;/HTML&gt; </p>
+<p>L&auml;gg m&auml;rke till att denna fil inte har n&aring;gon BODY-tagg. Anledningen till detta &auml;r att denna sida aldrig syns, denna sida talar bara om f&ouml;r webbl&auml;saren hur den skall delas upp. man kan dock l&auml;gga till en BODY-tagg f&ouml;r de anv&auml;ndare som inte kan se ramar. <br>
+    <br>
+  Taggen <strong>&lt;FRAMESET ROWS="20%, 80%"&gt; </strong> talar om f&ouml;r webbl&auml;saren att den skall delas upp <strong>horisontellt (radvis) i tv&aring; ramar </strong> d&auml;r f&ouml;rsta ramen skall t&auml;cka <strong>20% </strong>av webbl&auml;sarf&ouml;nstrets h&ouml;jd samt att den nedre ramen skall t&auml;cka <strong>80%. </strong><br>
+  <br>
+  <strong>&lt;FRAME SRC="top.html"&gt; </strong>talar om f&ouml;r webbl&auml;saren att den &ouml;vre ramen skall inneh&aring;lla ett <strong>HTML- dokument </strong> som heter <strong>top.html </strong>och <strong> &lt;FRAME SRC="main.html"&gt; </strong>betyder att den nedre ramen skall inneh&aring;lla ett HTML-dokument som heter <strong>main.html. </strong> Det hela avslutas med <strong>&lt;/FRAMESET&gt;. <br>
+  <br>
+</strong>Du kan om du vill dela upp f&ouml;nstret i kolumner. F&ouml;r att g&ouml;ra det anv&auml;nder du dig av attributet <strong>cols </strong>. </p>
+<p>Det &auml;r givetvis viktigt att du <strong>skapar </strong>tv&aring; till vanliga html-dokument (utan ramar allts&aring;) som du d&ouml;per till <strong>"top.html" </strong>och <strong>"main.html </strong>". <strong><br>
+      <br>
+</strong></p>
+<p align="center"><strong><a href="ramexempel/enkla%20ramar%201/index1.html" target="_blank"><img src="bilder2/exempelknapp.gif" alt="Visa exempel-knapp" width="107" height="29" border="0"></a></strong></p>
+<hr>
+<p><strong>Storlek p&aring; ramar </strong><br>
+  Som du s&auml;kert har f&ouml;rst&aring;tt s&aring; kan du sj&auml;lv best&auml;mma hur stora alla ramar skall vara. Man kan om man vill ange storlekarna i <strong>pixlar, procent </strong> och relativ storlek ( <strong>* </strong>). <br>
+  <br>
+  I bland ser koden f&ouml;r storleken ut s&aring; h&auml;r: <br>
+&lt;FRAMESET ROWS= <strong>"20%, *" </strong>&gt; <br>
+  <br>
+  Stj&auml;rnan (asterisk) inneb&auml;r resterande utrymme dvs. webbl&auml;sarf&ouml;nstret delas in i en rad som t&auml;cker 20% och den andra resterande del av f&ouml;nstret. </p>
+<p><strong>Ramarnas attribut </strong><br>
+  Taggen <strong>&lt;FRAME&gt; </strong> anger vad en ram inneh&aring;ller. Denna tagg f&aring;r bara f&ouml;rekomma inuti taggen <strong>&lt;FRAMESET&gt; </strong>. Taggen kan ha 8 olika attribut. </p>
+<ol>
+  <li><strong>SRC </strong> - En URL (adress) till det dokument vars inneh&aring;ll skall visas i ramen. Till exempel main.html. <br>
+      <br>
+  <li><strong>NORESIZE </strong> - F&ouml;rhindrar anv&auml;ndaren att &auml;ndra storlek p&aring; dina ramar. <br>
+      <br>
+  <li><strong>SCROLLING </strong>- Styr rullningslisterna i ramarna. Kan ha v&auml;rdena: NO, YES och AUTO (f&aring;r rullist om det beh&ouml;vs). <br>
+      <br>
+  <li><strong>FRAMEBORDER </strong> (Explorer) <strong>BORDER </strong> (Netscape) – Styr ramarnas synlighet. Kan ha v&auml;rdena ”0 ”och ”1” respektive "yes" och "no". Det f&ouml;rvalda v&auml;rdet &auml;r 1. (Du kan ocks&aring; anv&auml;nda BORDERCOLOR f&ouml;r att ge ramlinjerna f&auml;rg). <br>
+      <br>
+  <li><strong>FRAMESPACING </strong> – Styr mellanrummet mellan ramarna. Kan ha v&auml;rdena ”1” och ”0” eller ”YES” och ”NO”. <br>
+      <br>
+  <li><strong>MARGINWIDTH </strong> - Marginalen i sidled mellan ramen och inneh&aring;ll. <br>
+      <br>
+  <li><strong>MARGINHEIGHT </strong> - Marginalen i h&ouml;jdled mellan ramen och inneh&aring;ll. <br>
+      <br>
+  <li><strong>LONGDESC </strong> - En URL (adress) till ett dokument som beskriver ramens inneh&aring;ll. De flesta webbl&auml;sare saknar st&ouml;d f&ouml;r detta attribut. </li>
+</ol>
+<p>&lt;HTML&gt; <br>
+&lt;HEAD&gt; <br>
+&lt;TITLE&gt;Ramar&lt;/TITLE&gt; <br>
+&lt;/HEAD&gt; <br>
+&lt;FRAMESET ROWS="20%, 80%"&gt; <br>
+  <strong>&lt;FRAMEBORDER="0" FRAMESPACING="0" </strong>&gt; <br>
+&lt;FRAME SRC="oversidan.html" <strong> SCROLLING="AUTO" NORESIZE </strong>&gt; <br>
+&lt;FRAME SRC="nedersidan.html" <strong>SCROLLING="NO" NORESIZE&gt; </strong><br>
+&lt;/FRAMESET&gt; <br>
+&lt;/HTML&gt; </p>
+      <p align="center"><strong></strong><a href="ramexempel/ramar%20i%20ramar%202/index2.html" target="_blank"><img src="bilder2/exempelknapp.gif" alt="Visa exempel-knapp" width="107" height="29" border="0"></a></p>
+<hr>
+<p><strong>Ramar i ramar </strong><br>
+  Du kan ocks&aring; g&ouml;ra en kombination av ramar i ramar. H&auml;r m&aring;ste du h&aring;lla tungan r&auml;tt i mun. T&auml;nk p&aring; att <strong>varje &lt;FRAMESET&gt; </strong> m&aring;ste ha sin egen sluttag . <br>
+  <br>
+&lt;HTML&gt; <br>
+&lt;HEAD&gt; <br>
+&lt;TITLE&gt;Ramar i ramar&lt;/TITLE&gt; <br>
+&lt;/HEAD&gt; <br>
+  <strong>&lt;FRAMESET ROWS="20%, *"&gt; <br>
+&lt;FRAME SRC="rubrik.html"&gt; <br>
+  <br>
+&lt;FRAMESET COLS="20%, *"&gt; <br>
+&lt;FRAME SRC="meny.html"&gt; <br>
+&lt;FRAME SRC="huvudsida.html"&gt; <br>
+  <br>
+&lt;/FRAMESET&gt; <br>
+&lt;/FRAMESET&gt; <br>
+</strong>&lt;/HTML&gt; </p>
+<p align="center"><strong><br>
+        <a href="ramexempel/ramar%20med%20attribut%203/index3.html" target="_blank"><img src="bilder2/exempelknapp.gif" alt="Visa exempel-knapp" width="107" height="29" border="0"></a></strong></p>
+<hr>
+<p align="left"><strong>L&auml;nkar och ramar </strong><br>
+Ett av det vanligaste saker man anv&auml;nder ramar till &auml;r att l&aring;ta en ram vara meny. N&auml;r man sedan klickar p&aring; en l&auml;nk i menyn s&aring; laddas sidan som l&auml;nken pekar p&aring; in i en annan ram oftast huvudsidan. F&ouml;r att kunna ladda in sidor i andra ramar, m&aring;ste man f&ouml;rst tilldela &lt;FRAME&gt; ett attribut som heter <strong> NAME </strong>. <br>
+<br>
+&lt;FRAMESET ROWS=20%, 80%&gt; <strong><br>
+</strong>&lt;FRAME SRC="top.html" <strong>NAME="top"&gt; <br>
+</strong>&lt;FRAME SRC="main.html" <strong> NAME="main"&gt; </strong><br>
+&lt;/FRAMESET&gt; <br>
+<br>
+Detta anv&auml;nds sedan i l&auml;nktaggarna med taggen <strong>TARGET </strong> f&ouml;r att kunna styra vilken ram de olika HTML-dokumenten skall &ouml;ppnas. Det finns en del alternativ till TARGET (m&aring;l). </p>
+<table border="1" cellpadding="2" cellspacing="1">
+  <tr>
+    <td><p>TARGET="_self" </p></td>
+    <td><p>&Ouml;ppnar sidan i samma ram som l&auml;nken befinner sig (grundinst&auml;llning). </p></td>
+  </tr>
+  <tr>
+    <td><p>TARGET="namn" </p></td>
+    <td><p>&Ouml;ppnar sidan i ramen med det namn som anges (name). Se ovan. </p></td>
+  </tr>
+  <tr>
+    <td><p>TARGET="top" </p></td>
+    <td><p>&Ouml;ppnar sidan utan ramar i samma webbl&auml;sarf&ouml;nster. </p></td>
+  </tr>
+  <tr>
+    <td><p>TARGET="_blank" </p></td>
+    <td><p>&Ouml;ppnar sidan utan ramar i ett nytt webbl&auml;sarf&ouml;nster. </p></td>
+  </tr>
+  <tr>
+    <td><p>TARGET="_parent" </p></td>
+    <td><p>&Ouml;ppnar sidan i ett eget webbl&auml;sarf&ouml;nster i sina ursprungsramar. </p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><strong>Exempel </strong><br>
+    Du har gjort ett framset med en meny och en huvudsida. <br>
+    <strong>&lt;FRAME SRC="start.html" NAME="huvudsida"&gt; </strong><br>
+    T&auml;nk dig att du har l&auml;nkar i meny.html och vill att l&auml;nkarna skall laddas in i ramen som heter huvudsida. <br>
+    F&ouml;r att detta skall g&aring; m&aring;ste du l&auml;gga till ett attribut i l&auml;nktaggarna. <br>
+    <strong>&lt;A HREF="intressen.html" TARGET="huvudsida"&gt; </strong></p>
+<p><br>
+    <strong>TIPS! </strong></p>
+<ul>
+  <li>Om du v&auml;ljer att &ouml;ppna dokumentet i hela f&ouml;nstret m&aring;ste du t&auml;nka p&aring; att ha med en <strong>l&auml;nk tillbaka till index.html </strong>. <br>
+      <br>
+  <li>N&auml;r du anv&auml;nder externa l&auml;nkar b&ouml;r du se till att dessa &ouml;ppnas i <strong>egna f&ouml;nster </strong>eftersom det ser konstigt ut och eftersom &auml;garen av den andra sidan kan ta illa upp. <br>
+      <br>
+  <li>N&auml;r alla l&auml;nkar i ett dokument skall visas i <strong>samma </strong> f&ouml;nster beh&ouml;ver du inte ange detta f&ouml;r varje l&auml;nk. Anv&auml;nd ist&auml;llet taggen <strong>BASE TARGET="ramnamn" </strong>. Du placerar detta direkt under <strong> BODY-taggen </strong> p&aring; l&auml;nksidan. Vill du d&auml;refter att n&aring;got enstaka dokument skall visas i en annan ram s&aring; anger du <strong>TARGET="ramnamn" </strong> i den aktuella l&auml;nken. </li>
+</ul>
+<p align="center"><strong><a href="ramexempel/lankar%20och%20ramar%204/index4.html" target="_blank"><img src="bilder2/exempelknapp.gif" alt="Visa exempel-knapp" width="107" height="29" border="0"></a></strong></p>
+<hr>
+<p><strong>Flytande ram - IFRAME </strong><br>
+  Detta m&auml;rke anv&auml;nds f&ouml;r att skapa en "flytande" ram som ligger p&aring; en vanlig webbsida, precis som en bild. <strong>IFRAME </strong> st&aring;r f&ouml;r inline frame. M&auml;rket kan ha samma attribut som FRAME och dessutom attributet ALIGN s&aring; man kan styra vart p&aring; sidan ramen hamnar. <br>
+&lt;HTML&gt; <br>
+&lt;HEAD&gt; <br>
+&lt;TITLE&gt;Iframe&lt;/TITLE&gt; <br>
+&lt;/HEAD&gt; <br>
+&lt;BODY&gt; <br>
+  H&auml;r &auml;r ett exempel p&aring; hur man kan anv&auml;nda sig av IFRAMES, dvs. en flytande ruta. <br>
+  <strong>&lt;IFRAME SRC="tabell.html" WIDTH="500" HEIGHT="200" SCROLLING="AUTO" NORESIZE ALIGN="CENTER"&gt; <br>
+&lt;/IFRAME&gt; </strong><br>
+&lt;/BODY&gt; <br>
+&lt;/HTML&gt; </p>
+<p align="center"><strong><a href="ramexempel/iframes%205/index5.html" target="_blank"><img src="bilder2/exempelknapp.gif" alt="Visa exempe-knapp" width="107" height="29" border="0"></a></strong></p>
+<hr>
+<p><strong>NOFRAMES - inga ramar </strong><br>
+  F&ouml;r &auml;ldre versioner av webbl&auml;sare, som inte kan hantera visning av ramar finns det en tagg som heter <strong>NOFRAMES </strong>. Denna tagg anv&auml;ndes p&aring; <strong>index.html </strong> efter framesetet. H&auml;r har du m&ouml;jlighet att tala om f&ouml;r anv&auml;ndaren att din sida anv&auml;nder ramar och att de m&aring;ste ha en nyare version av webbl&auml;sare. Du kan ocks&aring; g&ouml;ra en l&auml;nk till en sida som inte anv&auml;nder frames. Taggen m&aring;ste avslutas. Du m&aring;ste ocks&aring; l&auml;gga till en <strong>BODY-tagg </strong> i index.html n&auml;r du anv&auml;nder NOFRAMES. <br>
+  <br>
+  Exempel: <br>
+&lt;NOFRAMES&gt; &lt;BODY BGCOLOR="#FFFFFF"&gt; <br>
+&lt; FONT FACE="Verdana, Arial, Helvetica, sans-serif" size="2"&gt; <br>
+  Tyv&auml;rr kan inte din webbl&auml;sare visa ramar. Ladda g&auml;rna hem en nyare version. <br>
+&lt; /FONT&gt; <br>
+&lt; /BODY&gt; &lt;/NOFRAMES&gt; <br>
+</p>
+<p align="left"><strong>OBS! </strong><br>
+  En sak som du b&ouml;r t&auml;nka p&aring; &auml;r att titlarna som finns p&aring; HTML-dokument som ligger i ramar <strong>inte </strong> visas. Det &auml;r ist&auml;llet titeln som finns i HTML-dokumentet som skapade ramarna som visas dvs. <strong>index.html </strong>. </p>
+<p align="left">&nbsp;</p>
+<h3>&nbsp;</h3>
+<p align="center"><strong><a href="Uppgifter2/uppgift10.htm" target="_blank">B&ouml;rja med uppgift 10! </a></strong></p>
+</div>
+<div id="kolumn2">  
+  <h3 align="left"> Resurser</h3>
+  <p align="left"><a href="Resurser/studierod.htm" target="_blank">Studier&aring;d</a><br>
+    <a href="Resurser/fargkarta.htm" target="_blank">Webbs&auml;kra f&auml;rger </a><br>
+        <a href="Resurser/taggarkiv.htm" target="_blank">Taggarkiv</a><br>
+        <a href="Resurser/lankarkiv.htm" target="_blank">L&auml;nkarkiv</a><br>
+        <a href="Resurser/kapitelguide.htm" target="_blank">Kapitelguide
+        </a><br>
+        <a href="slutuppgift.htm" target="_blank">Slutuppgift
+        </a><br>
+      <a href="Resurser/utvardering.htm" target="_blank">Utv&auml;rdering</a> </p>
+  <h3 align="left">        <br>
+        <br>
+     </h3>
+</div>
+</div>
+ <div id="sidfot">
+   <div align="left"><a href="mailto:carina.minell@harnosand.se">Carina Minell ©</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+Rekommenderad uppl&ouml;sning: 1152*864&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+Senast uppdaterad: 090819 </div>
+ </div>
+</div>
+</body>
+</html>

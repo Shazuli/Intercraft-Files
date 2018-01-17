@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>Minell´s HTML - Kapitel 2 - Formateringstaggar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="generator" content="Dreamweaver MX, CSS, Anteckningar">
+<meta name="keywords" content="HTML-kurs, html, html-editorer, scriptspråk">
+<meta name="description" content="Denna sida är en HTML-kurs för nybörjare. Sidan innehåller både fakta, koder och uppgifter.">
+<meta name="author" content="Copyright Carina Minell">
+<link href="layout.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="layout">
+<div id="sidhuvud">
+  <h2><a href="Kapitel2/index.htm"><img src="bilder2/nylogga2.gif" alt="Länk till startsidan" width="471" height="90" border="0"></a></h2>
+  </div>
+<div id="menycontainer">
+<ul>
+    <li><a href="index.htm">Startsida</a></li>
+	<li><a href="kapitel1.htm">Kapitel 1</a></li>
+    <li><a href="kapitel2.htm"id="current">Kapitel 2</a></li>
+    <li><a href="kapitel3.htm">Kapitel 3</a></li>
+    <li><a href="kapitel4.htm">Kapitel 4</a></li>
+	<li><a href="kapitel5.htm">Kapitel 5</a></li>
+    <li><a href="kapitel6.htm">Kapitel 6</a></li>
+    <li><a href="kapitel7.htm">Kapitel 7</a></li>
+    <li><a href="kapitel8.htm">Kapitel 8</a></li>
+	<li><a href="kapitel9.htm">Kapitel 9</a></li>
+    <li><a href="kapitel10.htm">Kapitel 10</a></li>
+    <li><a href="kapitel11.htm">Kapitel 11</a></li>
+
+</ul>
+</div>
+<div id="kolumncontainer">
+<div id="kolumn1">
+<h1>Kapitel 2 - Formateringstaggar </h1>
+<p align="left">F&ouml;r att formatera skriven text i ett HTML-dokument m&aring;ste du anv&auml;nda speciella HTML-taggar och attribut. Om du inte anger n&aring;gon formatering f&ouml;r texten kommer den att visas som v&auml;nsterst&auml;lld, normal text (Times New Roman punktstorlek 10-12). </p>
+<h3>Text-taggar </h3>
+<p><strong>Kursiv stil </strong><br>
+  N&auml;r du vill att texten skall bli <strong><em>kursiv </em></strong> anv&auml;nder du taggen <strong>&lt;I&gt; </strong>, som st&aring;r f&ouml;r Italics. T&auml;nk p&aring; att du ocks&aring; m&aring;ste avsluta med <strong>&lt;/I&gt; </strong> n&auml;r du anser dig f&auml;rdig med den kursiva texten. <br>
+  <strong>&lt;I&gt;Denna text skulle bli kursiv i ett HTML-dokument.&lt;/I&gt;</strong></p>
+<hr>
+<p><strong>Fet stil </strong><br>
+  N&auml;r du vill anv&auml;nda dig av <strong>fet text </strong> anv&auml;nder du taggen <strong>&lt;B&gt; </strong>, som st&aring;r f&ouml;r boldface p&aring; engelska. &Auml;ven h&auml;r g&auml;ller det att avsluta taggen n&auml;r du &auml;r n&ouml;jd. <br>
+  <strong>&lt;B&gt;Denna text skulle bli fet i ett HTML-dokument&lt;/B&gt;</strong></p>
+<hr>
+<p><strong>Understruken text <br>
+  </strong>N&auml;r du vill ha <strong>understruken text </strong> anv&auml;nder du dig av taggen <strong>&lt;U&gt; </strong>, som betyder underline. T&auml;nk p&aring; att understruken text i webbdokument ofta kan uppfattas som l&auml;nkar och b&ouml;r d&auml;rf&ouml;r undvikas om du inte vill betona n&aring;got alldeles s&auml;rskilt. <strong><br>
+&lt;U&gt;Denna text skulle bli understruken i ett HTML-dokument&lt;/U&gt; </strong></p>
+<hr>
+<p><strong>      Upph&ouml;jda och neds&auml;nkta tecken <br>
+    </strong>Taggarna &lt;SUP&gt; fr&aring;n engelskans superscript och &lt; SUB &gt; fr&aring;n subscript g&ouml;r att texten skrivs med mindre teckengrad och upph&ouml;jt respektive neds&auml;nkt i f&ouml;rh&aring;llande till den andra texten. <br>
+    Ex: X&lt;SUP&gt;2&lt;/SUP&gt; eller kanske H&lt;SUB&gt;2&lt;/SUB&gt; <br>
+    X 2 eller kanske H 2 O </p>
+<hr>
+<p><strong>Nytt stycke <br>
+</strong>N&auml;r du vill skapa ett nytt stycke (blankrad) i ett HTML-dokument anv&auml;nder du taggen <strong>&lt;P&gt; </strong>, som st&aring;r f&ouml;r paragraph. Vill du d&auml;remot bara byta rad i en text anv&auml;nder du taggen <strong>&lt;BR&gt; </strong>, som st&aring;r f&ouml;r Break (ingen av dessa taggar beh&ouml;ver egentligen st&auml;ngas, men g&ouml;r det g&auml;rna &auml;nd&aring;).</p>
+<hr>
+<p><strong>Styckeindrag </strong><br>
+  N&auml;r du vill att texten skall bli indragen p&aring; i HTML-dokumentet anv&auml;nder du dig av taggen <strong>&lt;BLOCKQUOTE&gt; </strong>. <br>
+  (Om du vill skapa ett mindre indrag, motsvarande ett mellanslag f&aring;r du anv&auml;nda teckenkoden f&ouml;r h&aring;rt mellan slag, <strong> &amp;nbsp; </strong>). </p>
+<hr>
+<p><strong>Horisontella linjer </strong><br>
+  N&auml;r du vill l&auml;gga till en horisontell linje anv&auml;nder du taggen <strong>&lt;HR&gt; </strong>, som st&aring;r f&ouml;r horisontal rule. M&auml;rket kan bl a ha attributen: ALIGN, COLOR, SIZE NOSHADE och WIDTH.</p>
+<hr>
+<p><strong>Adress <br>
+  </strong>Det &auml;r viktigt att uppgifter om vem som &auml;r ansvarig f&ouml;r webbsidan framg&aring;r. Denna information b&ouml;r man ha p&aring; startsidan eller varf&ouml;r inte i en frame som &auml;r synlig hela tiden. Det finns en s&auml;rskild adresstagg f&ouml;r detta n&auml;mligen <strong>&lt;ADDRESS&gt; </strong>. L&auml;gg m&auml;rke till stavningen, denna tagg skall avlutas. </p>
+<hr>
+<h3><strong>Teckensnittstaggar
+</strong></h3>
+<p>Med hj&auml;lp av FONT-taggen kan du f&ouml;r&auml;ndra teckensnittet och dess storlek.</p> 
+<p><strong>Teckenstorlek </strong><br>
+  N&auml;r du vill &auml;ndra storleken p&aring; texten l&auml;gger du till attributet <strong> SIZE </strong> i <strong>&lt;FONT&gt; </strong>-taggen. Det finns 7 olika storlekar att v&auml;lja mellan d&auml;r siffran 1 anger den minsta storleken och siffran 7 den st&ouml;rsta. Du kan antingen ange textstorleken relativ eller absolut. V&auml;ljer du en absolut storlek &lt;FONT SIZE="5"&gt; blir texten storlek 5 oavsett webbl&auml;sarens inst&auml;llning. Vill du d&auml;remot att texten skall vara mindre eller st&ouml;rre &auml;n omgivande text kan du ange en relativ storlek &lt;FONT SIZE="-2"&gt; eller &lt;FONT SIZE="+2"&gt;.
+  <br>
+  Standardstorleken f&ouml;r de flesta webbl&auml;sare &auml;r 3 om inget annat anges. Om du vill ange en standardstorlek f&ouml;r hela dokumentet kan du anv&auml;nda dig av taggen <strong>&lt;BASEFONT&gt; </strong>. Den kan placeras direkt efter BODY-taggen. Taggen beh&ouml;ver ingen sluttagg utan g&auml;ller tills dokumentets slut eller tills n&auml;sta &lt;BASEFONT&gt;. Liksom FONT-taggen kan BASEFONT ha flera attribut. <br>
+  <strong>&lt;BODY&gt; <br>
+&lt;BASEFONT SIZE="2" FACE="Arial, Verdana" COLOR="blue"&gt; </strong></p>
+<p>N&auml;r du vill styra teckenstorleken eftersom i dokumentet: <br>
+    <strong>&lt;FONT SIZE="3"&gt;</strong></p>
+<hr>
+<p><strong>Teckensnitt <br>
+  </strong>F&ouml;r att f&ouml;r&auml;ndra teckensnittet anv&auml;nder du <strong> FONT-taggen </strong> och attributet <strong>FACE </strong>. <strong></strong><br>
+  N&aring;got man m&aring;ste t&auml;nka p&aring; n&auml;r man &auml;ndrar teckensnittet &auml;r att det b&ouml;r vara ett <strong>vanligt f&ouml;rekommande </strong> teckensnitt (som de flesta anv&auml;ndare har i sin dator) och att det &auml;r ett <strong>linj&auml;rt teckensnitt </strong>(utan seriffer = klackar p&aring; bokst&auml;verna) <strong></strong>som l&auml;ses b&auml;st p&aring; sk&auml;rm. Man kan ocks&aring; ange flera teckensnitt f&ouml;r att vara p&aring; den s&auml;kra sidan. Webbl&auml;saren v&auml;ljer det f&ouml;rsta teckensnittet om det finns i anv&auml;ndarens dator osv. <br>
+  <strong>&lt;FONT FACE="Verdana, Arial, Helvetica, sans-serif"&gt;</strong></p>
+<hr>
+<p><strong>Rubriker </strong><br>
+  N&auml;r du vill anv&auml;nda dig av rubriker kan du anv&auml;nda dig av taggarna <strong>&lt;H1&gt; </strong> till och med <strong>&lt;H6&gt; </strong>, H st&aring;r f&ouml;r heading. H&auml;r &auml;r det tv&auml;rtom gentemot teckenstorlekarna. &lt;H1&gt; &auml;r den st&ouml;rsta rubrikstorleken och &lt;H6&gt; den minsta. </p>
+<h1>    <strong>&lt;H1&gt;H&auml;r &auml;r den st&ouml;rsta rubrikstorleken&lt;/H1&gt; </strong></h1>
+<h6><strong><br>
+</strong><strong>&lt;H6&gt;H&auml;r &auml;r den minsta rubrikstorleken&lt;/H6&gt;</strong></h6>
+<hr>
+<p><strong>Justera Text <br>
+</strong>Om du inte anger n&aring;gon justering f&ouml;r din text kommer den automatiskt att visas som v&auml;nsterst&auml;lld. Du kan justera text p&aring; lite olika s&auml;tt antingen f&ouml;r ett stycke i taget (se tips l&auml;ngst ner) eller f&ouml;r flera stycken i taget genom taggen &lt;DIV&gt;.</p>
+<p><strong>H&ouml;gerst&auml;lld text <br>
+  </strong>F&ouml;r att f&aring; h&ouml;gerst&auml;lld text anv&auml;nder du dig av <strong><br>
+&lt;DIV ALIGN="RIGHT"&gt; </strong>. (DIV st&aring;r f&ouml;r division, avsnitt och ALIGN f&ouml;r aligment, justering). Du st&auml;nger taggen genom <strong>&lt;/DIV&gt;. </strong></p>
+<p align="right"><strong><br>
+</strong><strong>&lt;DIV ALIGN="RIGHT"&gt;Denna text visas som h&ouml;gerst&auml;lld av din webbl&auml;sare&lt;/DIV&gt; </strong></p>
+<p><strong>V&auml;nsterst&auml;lld text </strong><br>
+  Eftersom texten vanligtvis &auml;r v&auml;nsterjusterad i ett HTML-dokument, s&aring; kan denna tagg k&auml;nnas lite on&ouml;dig, men ibland kan man ha nytta av den. <br>
+  <strong>&lt;DIV ALIGN="LEFT"&gt;Denna text visas som v&auml;nsterst&auml;lld av din webbl&auml;sare&lt;/DIV&gt;<br>
+  </strong></p>
+<p><strong>Marginaljusterad text </strong><br>
+  N&auml;r du vill ha j&auml;mn h&ouml;ger och v&auml;nsterkant i din text anv&auml;nder du av <strong> &lt;DIV ALIGN="JUSTIFY"&gt;. </strong>F&ouml;ruts&auml;ttningen d&aring; &auml;r att du har minst tv&aring; fullst&auml;ndiga rader med text.<br> 
+  </p>
+<p><strong>Centrerad text </strong><br>
+  Om du vill centrera texten anv&auml;nder du taggen <strong>&lt;CENTER&gt; som &auml;r en f&ouml;rkortning av <br>
+  &lt;DIV ALIGN="CENTER"&gt;, </strong> som givetvis ocks&aring; har en sluttagg <strong>&lt;/CENTER&gt; </strong>. </p>
+<p align="center"><strong>&lt;CENTER&gt;Denna text kommer att visas som centrerad i ett HTML-dokument&lt;/CENTER&gt; </strong></p>
+<p align="left"><strong>TIPS! </strong>Om du vill justera texten <strong>ett </strong> stycke &auml;r det enklare att du anv&auml;nder dig av <strong><br>
+  &lt;P ALIGN=&quot;RIGHT&quot;&gt;Text.......&lt;/P&gt;. </strong> H&auml;r st&aring;r P f&ouml;r paragraph, som du l&auml;rde dig tidigare.<br> 
+  <br>
+</p>
+<p align="center"><strong><a href="Uppgifter2/uppgift2.htm" target="_blank">B&ouml;rja med uppgift 2!</a></strong></p>
+</div>
+<div id="kolumn2">  
+  <h3 align="left"> Resurser</h3>
+  <p align="left"><a href="Resurser/studierod.htm" target="_blank">Studier&aring;d</a><br>
+    <a href="Resurser/fargkarta.htm" target="_blank">Webbs&auml;kra f&auml;rger </a><br>
+        <a href="Resurser/taggarkiv.htm" target="_blank">Taggarkiv</a><br>
+        <a href="Resurser/lankarkiv.htm" target="_blank">L&auml;nkarkiv</a><br>
+        <a href="Resurser/kapitelguide.htm" target="_blank">Kapitelguide
+        </a><br>
+        <a href="slutuppgift.htm" target="_blank">Slutuppgift
+        </a><br>
+      <a href="Resurser/utvardering.htm" target="_blank">Utv&auml;rdering</a> </p>
+  <h3 align="left">        <br>
+        <br>
+     </h3>
+</div>
+</div>
+ <div id="sidfot">
+   <div align="left"><a href="mailto:carina.minell@harnosand.se">Carina Minell ©</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+
+Rekommenderad uppl&ouml;sning: 1152*864&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+Senast uppdaterad: 0908179 </div>
+ </div>
+</div>
+</body>
+</html>
